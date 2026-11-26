@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iceland in Numbers — population, GDP, jobs, prices, health, education, energy, 2015–2024</title>
+<meta name="description" content="Iceland in Numbers: an independent statistics site for Iceland, 2015–2024. Population, GDP, jobs, prices, health, education, energy and regions — every figure with its source and year.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b2545'/%3E%3Cpath d='M16 6 L24 16 L16 26 L8 16 Z' fill='%2348cae4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="menu-btn" class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <a class="brand" href="#/">
+    <span class="brand-mark">◆</span>
+    <span class="brand-text"><strong>Iceland in Numbers</strong><span class="brand-sub">An independent statistics site · 2015–2024</span></span>
+  </a>
+  <div class="headline" id="headline-stat" aria-live="polite"></div>
+  <label class="year-picker">Year
+    <select id="year-select" aria-label="Choose year">
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024" selected>2024</option>
+    </select>
+  </label>
+</header>
+<div class="layout">
+  <nav class="sidenav" id="sidenav" aria-label="Sections">
+    <p class="nav-head">Sections</p>
+    <ul id="nav-list"></ul>
+    <p class="nav-head">In this site</p>
+    <ul class="nav-facts">
+      <li><strong>10</strong> sections, <strong>23</strong> charts, <strong>12</strong> tables</li>
+      <li><strong>2015–2024</strong> — ten years of data</li>
+      <li>Every figure: source + year</li>
+      <li>No sign-up, no tracking, no network calls</li>
+    </ul>
+  </nav>
+  <main class="content" id="view" tabindex="-1"></main>
+  <aside class="rail" id="rail" aria-label="Sources and reading notes"></aside>
+</div>
+<footer class="bottombar">
+  <div><strong>How to read this site:</strong> pick a year above — the cards, charts and tables follow it. Click any table heading to sort it. Hover any chart mark for its exact value and source.</div>
+  <div class="bottom-tools"><a href="#/prices">Price calculator</a> · <a href="#/regions">Compare regions</a> · <a href="#/methods">Sources &amp; methods</a></div>
+  <div class="bottom-note">Iceland in Numbers is an independent publication. It is not Statistics Iceland (Hagstofa Íslands). Data: World Bank, Statistics Iceland, Eurostat, Ember, Orkustofnun, Icelandic Tourist Board.</div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
